@@ -1,0 +1,31 @@
+{
+  "name": "proshop-v2",
+  "version": "1.0.0",
+  "description": "MERN stack application",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamitMalap27/ProShop.git"
+  },
+  "author": "Samit Malap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SamitMalap27/ProShop/issues"
+  },
+  "homepage": "https://github.com/SamitMalap27/ProShop#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4"
+  }
+}
